@@ -6,6 +6,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'me.tatarka:gradle-retrolambda:3.5.0'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -32,7 +33,7 @@ ext {
     // App dependencies
     supportLibraryVersion = '26.0.+'
     gsonVersion = '2.8.0'
-    glideVersion = '4.0.0'
+    glideVersion = '3.8.0'
 
     dagger2Version = '2.8'
     rxJava2Version = '2.1.3'
