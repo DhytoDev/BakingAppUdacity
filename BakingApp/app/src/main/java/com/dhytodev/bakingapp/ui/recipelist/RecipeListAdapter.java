@@ -51,16 +51,13 @@ public class RecipeListAdapter extends RecyclerView.Adapter<RecipeListAdapter.Re
         holder.recipeServings.setText(String.format(context.getString(R.string.serving), holder.recipe.getServings()));
 
         Glide.with(context)
-                .load(holder.recipe.getImage()).asBitmap()
+                .load(R.drawable.dummy_recipe_preview).asBitmap()
                 .into(new BitmapImageViewTarget(holder.recipeImage) {
                     @Override
                     public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
                         super.onResourceReady(resource, glideAnimation);
 
-                        Palette.from(resource).generate(palette -> {
-                            holder.titleBackground.setBackgroundColor(palette.getVibrantColor(context
-                                    .getResources().getColor(R.color.black_translucent_60)));
-                        });
+
                     }
                 });
 

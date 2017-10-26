@@ -36,7 +36,7 @@ public class RecipeListFragment extends BaseFragment implements RecipeListView, 
     @BindView(R.id.loading_pb)
     ProgressBar loadingPb;
     @BindInt(R.integer.grid_column_count)
-    int gridColomCount;
+    int gridColumnCount;
     @BindView(R.id.refresh)
     SwipeRefreshLayout refresh;
 
@@ -69,7 +69,7 @@ public class RecipeListFragment extends BaseFragment implements RecipeListView, 
     protected void setUp(View view) {
         recipesRv.setHasFixedSize(true);
 
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getContext(), gridColomCount);
+        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getContext(), gridColumnCount);
         recipesRv.setLayoutManager(layoutManager);
 
         mAdapter = new RecipeListAdapter(recipes, this);

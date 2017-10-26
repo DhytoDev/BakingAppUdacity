@@ -16,7 +16,8 @@
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         android:contentDescription=""
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:src="@drawable/dummy_recipe_preview"/>
 
 
     <View
