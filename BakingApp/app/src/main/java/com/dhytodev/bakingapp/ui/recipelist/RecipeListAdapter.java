@@ -57,7 +57,10 @@ public class RecipeListAdapter extends RecyclerView.Adapter<RecipeListAdapter.Re
                     public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
                         super.onResourceReady(resource, glideAnimation);
 
-
+                        /*Palette.from(resource).generate(palette -> {
+                            holder.titleBackground.setBackgroundColor(palette.getVibrantColor(context
+                                    .getResources().getColor(R.color.black_translucent_60)));
+                        });*/
                     }
                 });
 
